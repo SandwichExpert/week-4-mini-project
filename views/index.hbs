@@ -1,0 +1,33 @@
+<div class="pane" id="header_index">
+    <h1 id="main_title">What we do in the shadows</h1>
+    
+</div>
+
+<div class="pane">
+    {{!-- <h1 class="title">Home</h1> --}}
+    <div id="intro">
+    {{!-- <img id="opening" src="images/logo_black.png" alt="home"> --}}
+    <h1 class="page_title">Personal reviews of my favorite albums</h1>
+    </div>
+     <div id="konami"></div>
+    <p class="main_content">
+       <i>"Without music, life would be a mistake." - Friedrich Nietzsche</i>
+    </p>
+    <div id="one_pan">
+        {{#each albums}}
+        <div class="cover" style="background-image: url(images/{{this.src}})">
+            <div class="text" >
+                <a href="/review/{{this.href}}" class="weapon_links"><h3>{{this.artist}} - {{this.name}}</h3></a>
+                <p>{{this.description}}</p>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+   
+</div>
+<div class="pane">
+    
+
+</div>
+
+

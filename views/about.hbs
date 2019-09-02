@@ -1,0 +1,12 @@
+<div id="about" class="pane">
+    <h1 id="about_title">Our reviews: </h1>
+        {{#each albums}}
+            <h3>{{this.artist}}</h3>
+            <ul class="albums-list">
+                <a href="/review/{{this.href}}"><li>{{this.name}}</li></a>
+            </ul>
+            
+
+        {{/each}}
+    
+</div>

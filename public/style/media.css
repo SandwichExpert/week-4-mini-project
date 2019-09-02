@@ -1,0 +1,117 @@
+/*
+ * Author: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
+ */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (max-width : 480px) {
+    .menu{
+        display:none;
+    }
+    #burger{
+        visibility:visible;
+        color:white;
+        font-size:2rem;
+        z-index:999;
+    }
+    #nav_main{
+        height:5vh;
+    }
+   
+}
+
+@media only screen 
+and (max-width : 600px) {
+    #header_index{
+        display:none;
+    }
+    .menu{
+        display:none;
+    }
+    #burger{
+        visibility:visible;
+        color:white;
+        font-size:2rem;
+        z-index:999;
+    }
+    #nav_main{
+        height:5vh;
+    }
+    
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (max-width : 748px) {
+#one_pan{
+    flex-flow:column ;
+    
+}
+.reviews{
+    flex-direction : column;
+}
+.cover{
+
+    width:auto;
+}
+}
+
+@media only screen
+and (min-width : 601px){
+    .menu-mobile{
+        display:none;
+    }
+    #nav_mobile{
+        display:none;
+    }
+}
+
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (max-width : 1024px) 
+and (orientation : landscape) {
+    #header_index{
+        display:none;
+    }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (max-width : 1024px) 
+and (orientation : portrait) {
+    #header_index{
+        display:none;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}

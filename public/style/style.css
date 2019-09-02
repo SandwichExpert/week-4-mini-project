@@ -1,0 +1,326 @@
+/* @import url("media.css"); */
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    /* height : 100vh; */
+    margin : 0 auto; 
+}
+
+.albums-list{
+    display:flex;
+    flex-flow : row wrap;
+    justify-content:center;
+    align-items:center;
+    align-content: center;
+    padding:0;
+
+}
+
+.albums-list li{
+    list-style:none;
+    display:flex;
+    flex-direction : column;
+}
+
+#header_index{
+    background-image: url("../images/cover.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    height:60vh;
+    margin : 0;
+
+}
+
+#main_title{
+    font-size:5rem;
+    color:white;
+    font-family:'Asar',serif;
+}
+
+#home_logo{
+    height:60px;;
+    width:auto;
+}
+
+.pane{
+    margin:20px 20px;
+    display:flex;
+    justify-content:center;
+    flex-flow : column wrap;
+    align-content: center;
+    align-items: center;
+    
+}
+
+
+.pane h1{
+    color:black;
+}
+/* .pane h3{
+    color:black;
+} */
+
+
+
+
+#nav_main{
+    background-color : black;
+    color : white;
+    display:flex;
+    flex-direction : row wrap;
+    justify-content: center;
+    align-content:center;
+    align-items:center;
+    height: 8vh;
+    position:relative;
+    width:100%;
+}
+
+.menu{
+    height:100%;
+    text-decoration : none;
+    color:white;
+    width:auto;
+
+    align-items:center;
+    align-content:center;
+    justify-items: center; 
+    display:flex;
+    text-align: center;
+
+} 
+
+
+.cover{
+    height:350px;
+    width:350px;
+    /* margin:5px; */
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    align-content: center;
+    z-index:1;
+}
+
+.reviews{
+    display:flex;
+    flex-direction : row wrap;
+    margin : 20px 0;
+}
+
+.review{
+    margin-right:20px;
+}
+
+#one_pan{
+ 
+    display:flex;
+    justify-content:center;;
+    align-items:center;
+    align-content: center;
+    flex-flow:row wrap;
+    margin:10px;
+
+}
+.main_content{
+    color:black;
+}
+
+.text{
+    padding:20px;
+    background-color:rgba(0, 0, 0, 1);
+    color:rgba(255, 255, 255, 1);
+    opacity:0;
+    height:340px;
+    width:340px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    z-index:2;
+}
+
+/* .text h3,p{
+    color:white;
+} */
+
+.text:hover{
+    background-color:rgba(0, 0, 0, 0.8);
+    color:rgba(255, 255, 255, 1) !important;
+    opacity:1;
+    border:solid white 1px;
+
+
+}
+
+.text a:hover{
+    color:#debe99;
+}
+
+nav a{
+    text-decoration : none;
+    color:white;
+    align-items:center;
+    justify-items: center;  
+    margin :0 2rem;
+    font-size : 1.4rem;
+    /* padding-top:1%; */
+
+}
+
+.menu a:hover{
+    color:black;
+
+}
+
+.menu:hover{
+    border:solid white 1px;
+    background-color:white;
+    color:black;
+    
+}
+.menu-mobile a:hover{
+    color:black;
+    
+
+}
+
+.menu-mobile:hover{
+    border:solid white 1px;
+    background-color:white;
+    color:black;
+    
+}
+
+#users{
+    width:100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content:center;
+    align-items:center;
+    margin:20px;
+    padding:0;
+    
+}
+
+.user h3{
+    color: white;
+
+}
+
+
+
+
+.user img{
+    border: 1px solid white;
+}
+
+#weapons{
+    margin-top:50px;
+}
+
+.user{
+    list-style: none;
+    display : flex;
+    flex-flow:column nowrap;
+    border:solid 1px black;
+    background-color:black;
+    color:white;
+    padding : 10px;
+    width:20%;
+    height:100%;
+    /* margin: 5px; */
+    text-align:center;
+}
+
+
+
+
+
+
+.album-cover{
+    height:150px;
+    width:150px;
+    text-align:center;
+    
+}
+
+#intro{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items:center;
+}
+
+.enap{
+    display : flex;
+    flex-direction : row wrap;
+    justify-content:center;
+}
+
+#footer{
+    background-color:black;
+}
+
+#footer p{
+    color:white;
+}
+
+.weapon_images{
+    width:75%;
+    text-align:center;
+    display: flex;
+}
+
+#review_button{
+    height:30px;
+    width:100px;
+    border:1px black solid;
+    margin-top:15px;
+}
+
+.weapon_links{
+    text-decoration: none;
+    color:white;
+    margin-top:15px;
+}
+
+.is-hidden{
+    display:none;
+}
+.is-visible{
+    display:flex;
+}
+
+#burger{
+    visibility:hidden;
+}
+
+#nav_mobile {
+    /* display: flex; */
+    align-items: center;
+    flex-direction: column;
+    height: 6vh;
+    position: relative;
+    background: black;
+    z-index: 100;
+    width: 100%;
+}
+
+.menu-mobile{
+    color:white;
+    margin:5px;
+    align-items:center;
+    align-content:center;
+    justify-items: center; 
+    display:flex;
+    text-align: center;
+}
+
+
